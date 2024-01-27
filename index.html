@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+    <title>Melody Planner</title>
+  </head>
+
+  <body>
+    <header id="introScreen">
+      <div class="logo-container">
+        <img
+          src="https://i.pinimg.com/originals/c4/8a/86/c48a8637251050cc9558f6c414dc9041.png"
+          alt="Melody Planner Logo"
+          class="logo"
+        />
+      </div>
+      <div class="welcome-text">
+        <h1>Welcome to Melody Planner</h1>
+        <p>Your personalized study scheduler</p>
+      </div>
+
+      <button id="beginBtn">Begin</button>
+    </header>
+
+    <section id="inputScreen" class="hidden">
+      <header id="header-two">
+        <h2>Study Planner</h2>
+      </header>
+      <label for="subject">Subject:</label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="e.g., Mathematics"
+      />
+
+      <br />
+      <label for="assignment">Assignment/Topic:</label>
+      <input
+        type="text"
+        id="assignment"
+        name="assignment"
+        placeholder="e.g., Calculus Chapter 5"
+      />
+
+      <br />
+      <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" name="dueDate" />
+
+      <br />
+      <label for="studyDuration">Preferred Study Duration (in minutes):</label>
+      <input
+        type="number"
+        id="studyDuration"
+        name="studyDuration"
+        min="10"
+        placeholder="e.g., 60"
+      />
+
+      <br />
+      <label for="priorKnowledge">Prior Knowledge Level (1-10):</label>
+      <input
+        type="number"
+        id="priorKnowledge"
+        name="priorKnowledge"
+        min="1"
+        max="10"
+        placeholder="e.g., 5"
+      />
+
+      <br />
+      <label for="studyMaterials">Study Materials Available:</label>
+      <textarea
+        id="studyMaterials"
+        name="studyMaterials"
+        placeholder="e.g., Textbook, Lecture Notes"
+      ></textarea>
+
+      <br />
+      <label for="preferredEnvironment">Preferred Study Environment:</label>
+      <input
+        type="text"
+        id="preferredEnvironment"
+        name="preferredEnvironment"
+        placeholder="e.g., Library"
+      />
+
+      <br />
+      <label for="timeOfDay">Preferred Time of Day:</label>
+      <select id="timeOfDay" name="timeOfDay">
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+      </select>
+
+      <button id="submitBtn">Generate Study Schedule</button>
+    </section>
+  </body>
+</html>
