@@ -41,8 +41,9 @@
       <header id="header-two">
         <h2>Study Planner</h2>
       </header>
-      <label for="subject">Subject:</label>
+      <label class="study-element" for="subject">Subject:</label>
       <input
+        class="study-element"
         type="text"
         id="subject"
         name="subject"
@@ -50,8 +51,9 @@
       />
 
       <br />
-      <label for="assignment">Assignment/Topic:</label>
+      <label class="study-element" for="assignment">Assignment/Topic:</label>
       <input
+        class="study-element"
         type="text"
         id="assignment"
         name="assignment"
@@ -59,12 +61,15 @@
       />
 
       <br />
-      <label for="dueDate">Due Date:</label>
-      <input type="date" id="dueDate" name="dueDate" />
+      <label class="study-element" for="dueDate">Due Date:</label>
+      <input class="study-element" type="date" id="dueDate" name="dueDate" />
 
       <br />
-      <label for="studyDuration">Preferred Study Duration (in minutes):</label>
+      <label class="study-element" for="studyDuration"
+        >Preferred Study Duration (in minutes):</label
+      >
       <input
+        class="study-element"
         type="number"
         id="studyDuration"
         name="studyDuration"
@@ -73,8 +78,11 @@
       />
 
       <br />
-      <label for="priorKnowledge">Prior Knowledge Level (1-10):</label>
+      <label class="study-element" for="priorKnowledge"
+        >Prior Knowledge Level (1-10):</label
+      >
       <input
+        class="study-element"
         type="number"
         id="priorKnowledge"
         name="priorKnowledge"
@@ -84,16 +92,22 @@
       />
 
       <br />
-      <label for="studyMaterials">Study Materials Available:</label>
+      <label class="study-element" for="studyMaterials"
+        >Study Materials Available:</label
+      >
       <textarea
+        class="study-element"
         id="studyMaterials"
         name="studyMaterials"
         placeholder="e.g., Textbook, Lecture Notes"
       ></textarea>
 
       <br />
-      <label for="preferredEnvironment">Preferred Study Environment:</label>
+      <label class="study-element" for="preferredEnvironment"
+        >Preferred Study Environment:</label
+      >
       <input
+        class="study-element"
         type="text"
         id="preferredEnvironment"
         name="preferredEnvironment"
@@ -101,14 +115,18 @@
       />
 
       <br />
-      <label for="timeOfDay">Preferred Time of Day:</label>
-      <select id="timeOfDay" name="timeOfDay">
+      <label class="study-element" for="timeOfDay"
+        >Preferred Time of Day:</label
+      >
+      <select class="study-element" id="timeOfDay" name="timeOfDay">
         <option value="morning">Morning</option>
         <option value="afternoon">Afternoon</option>
         <option value="evening">Evening</option>
       </select>
 
-      <button id="submitBtn">Generate Study Schedule</button>
+      <button class="study-element" id="submitBtn">
+        Generate Study Schedule
+      </button>
     </section>
   </body>
 </html>
